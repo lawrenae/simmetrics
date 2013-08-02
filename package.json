@@ -1,31 +1,25 @@
 {
-	"name": "fauna",
-	"version": "0.0.1beta",
-	"description": "A full virtual host system with integrated static and dynamic serving tools, as well as request and response advancements.",
-	"keywords": ["vhost", "cgi", "static"],
+	"name": "SimMetrics.js",
+	"version": "0.7",
+	"description": "An optimized port of the SimMetrics Java library",
+	"keywords": ["SimMetrics", "string", "similarity"],
 	"bugs": {
 		"email": "enovacrazy@gmail.com"
 	},
-	"license": "MIT",
+	"license": "GPv2",
 	"author": {
 		"name": "Aaron Trent",
 		"email": "novacrazy@gmail.com",
 		"url": "www.novacrazy.com"
 	},
 	"files": ["./index.js", "./lib"],
-	"main": "fauna",
+	"main": "simmetrics",
 	"repository": {
 		"type": "git",
-		"url": "http://www.github.com/novacrazy/node-fauna.git"
+		"url": "http://www.github.com/novacrazy/SimMetrics.js.git"
 	},
 	"dependencies": {
-		"cookie": "*",
-		"mime": "*",
 		"lodash": "*",
-		"async": "*"
-	},
-	"optionalDependencies": {
-		"spdy": "*"
 	},
 	"engines": {
 		"node": ">=0.10"
