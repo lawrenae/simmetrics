@@ -1,0 +1,34 @@
+{
+	"name": "fauna",
+	"version": "0.0.1beta",
+	"description": "A full virtual host system with integrated static and dynamic serving tools, as well as request and response advancements.",
+	"keywords": ["vhost", "cgi", "static"],
+	"bugs": {
+		"email": "enovacrazy@gmail.com"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Aaron Trent",
+		"email": "novacrazy@gmail.com",
+		"url": "www.novacrazy.com"
+	},
+	"files": ["./index.js", "./lib"],
+	"main": "fauna",
+	"repository": {
+		"type": "git",
+		"url": "http://www.github.com/novacrazy/node-fauna.git"
+	},
+	"dependencies": {
+		"cookie": "*",
+		"mime": "*",
+		"lodash": "*",
+		"async": "*"
+	},
+	"optionalDependencies": {
+		"spdy": "*"
+	},
+	"engines": {
+		"node": ">=0.10"
+	},
+	"private": true
+}
