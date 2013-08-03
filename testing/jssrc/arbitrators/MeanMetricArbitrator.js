@@ -1,5 +1,0 @@
-
-
-modules.exports = {
-	metricsForArbitration: funct
-}
