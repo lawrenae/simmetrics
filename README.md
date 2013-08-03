@@ -1,4 +1,4 @@
-JavaScript port of the SimMetrics Java library
+JavaScript port of the SimMetrics Java library plus more.
 ===
 
 Hand-optimized and re-factored to provide clean and fast string similarity algorithms for JavaScript developers.
@@ -7,7 +7,6 @@ Although this is designed for Node.js, I will provide a browser version sometime
 
 So far, nearly all parts of the library have been ported. Algorithms left to be added are:
 
-	SmithWaterman
 	SmithWatermanGotoh
 	SmithWatermanGotohWindowedAffine
 	TagLink
