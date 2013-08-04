@@ -16,4 +16,7 @@ I should have those up very soon.
 
 A note I should make: I did not include the original timing tests for each one. I think they are unnecessary. However, as they can be useful sometimes, I will include them sometime as seperate modules which can be merged into the algorithms.
 
-Also, breaking change on the Soundex algorithm. To do a raw Soundex, you create an instance of Soundex, then call the function 'soundex' within it. Furthermore, there is no hyphen between the first letter and the numbers, as there was in the Java SimMetrics. It was useless and non-standard.
+Soundex Notes:
+	Soundex works as an object created by new, in which case the normal soundex function is called as instance.soundex(input[, length]); OR you can simply call the Soundex function directly as Soundex(input[, length]);
+
+	Also, it does not include the hyphen between the leading letter and the soundex numbers.
