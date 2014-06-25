@@ -19,7 +19,7 @@
 		"url": "http://www.github.com/novacrazy/SimMetrics.js.git"
 	},
 	"dependencies": {
-		"lodash": "*",
+		"lodash": "*"
 	},
 	"engines": {
 		"node": ">=0.10"
