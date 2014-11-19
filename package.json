@@ -1,28 +1,42 @@
 {
-	"name": "SimMetrics.js",
-	"version": "0.7.0",
-	"description": "An optimized port of the SimMetrics Java library",
-	"keywords": ["SimMetrics", "string", "similarity"],
-	"bugs": {
-		"email": "enovacrazy@gmail.com"
-	},
-	"license": "GPv2",
-	"author": {
-		"name": "Aaron Trent",
-		"email": "novacrazy@gmail.com",
-		"url": "www.novacrazy.com"
-	},
-	"files": ["./index.js", "./lib"],
-	"main": "simmetrics",
-	"repository": {
-		"type": "git",
-		"url": "http://www.github.com/novacrazy/SimMetrics.js.git"
-	},
-	"dependencies": {
-		"lodash": "*"
-	},
-	"engines": {
-		"node": ">=0.10"
-	},
-	"private": true
+  "name": "SimMetrics.js",
+  "version": "0.7.0",
+  "description": "An optimized port of the SimMetrics Java library",
+  "keywords": [
+    "SimMetrics",
+    "string",
+    "similarity"
+  ],
+  "bugs": {
+    "email": "enovacrazy@gmail.com"
+  },
+  "license": "GPv2",
+  "author": {
+    "name": "Aaron Trent",
+    "email": "novacrazy@gmail.com",
+    "url": "www.novacrazy.com"
+  },
+  "files": [
+    "./index.js",
+    "./lib"
+  ],
+  "main": "simmetrics",
+  "repository": {
+    "type": "git",
+    "url": "http://www.github.com/novacrazy/SimMetrics.js.git"
+  },
+  "dependencies": {
+    "lodash": "*"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "private": true,
+  "readme": "JavaScript port of the SimMetrics Java library plus more.\n===\n\nHand-optimized and re-factored to provide clean and fast string similarity algorithms for JavaScript developers.\n\nAlthough this is designed for Node.js, I will provide a browser version sometime in the future (or if anyone would like to contribute one).\n\nSo far, nearly all parts of the library have been ported. Algorithms left to be added are:\n\n\tSmithWatermanGotoh\n\tSmithWatermanGotohWindowedAffine\n\tTagLink\n\tTagLinkToken\n\nI should have those up very soon.\n\nA note I should make: I did not include the original timing tests for each one. I think they are unnecessary. However, as they can be useful sometimes, I will include them sometime as seperate modules which can be merged into the algorithms.\n\nSoundex Notes:\n\tSoundex works as an object created by new, in which case the normal soundex function is called as instance.soundex(input[, length]); OR you can simply call the Soundex function directly as Soundex(input[, length]);\n\n\tAlso, it does not include the hyphen between the leading letter and the soundex numbers.\n",
+  "readmeFilename": "README.md",
+  "_id": "SimMetrics.js@0.7.0",
+  "_shasum": "fca4536d2d0a8609da0d08097ebe860bd8d0b00a",
+  "_resolved": "git://github.com/msamblanet/SimMetrics.js#49d32d8120c4fe9c289483edb9f6996a4a1fffe6",
+  "_from": "git://github.com/msamblanet/SimMetrics.js",
+  "_fromGithub": true
 }
