@@ -38,5 +38,8 @@
   "_shasum": "fca4536d2d0a8609da0d08097ebe860bd8d0b00a",
   "_resolved": "git://github.com/msamblanet/SimMetrics.js#49d32d8120c4fe9c289483edb9f6996a4a1fffe6",
   "_from": "git://github.com/msamblanet/SimMetrics.js",
-  "_fromGithub": true
+  "_fromGithub": true,
+  "devDependencies": {
+    "should": "^4.3.0"
+  }
 }
