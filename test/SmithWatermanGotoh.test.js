@@ -27,4 +27,15 @@ describe('SmithWatermanGotoh Matching', function () {
         var result = smg.getSimilarity('Barb', 'Barbara');
         result.should.equal(1);
     });
+
+    it('matches Andy and Andrew well enough', function() {
+        var result = smg.getSimilarity('Andy', 'Andrew');
+        result.should.be.approximately(.75, 0.1);
+    });
+
+    it('matches Wendy and Windy well enough', function() {
+        var result = smg.getSimilarity('Wendy', 'Windy');
+        result.should.be.approximately(.95, 0.1);
+    });
+
 });
