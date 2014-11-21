@@ -4,9 +4,9 @@
  */
 var should = require('should');
 
-var Levenshtein = require('SimMetrics.js/lib/similaritymetrics/Levenshtein');
-var ChapmanMatchingSoundex = require('SimMetrics.js/lib/similaritymetrics/ChapmanMatchingSoundex');
-var TokeniserWhitespace = require('SimMetrics.js/lib/tokenisers/TokeniserWhitespace');
+var Levenshtein = require('../lib/similaritymetrics/Levenshtein');
+var ChapmanMatchingSoundex = require('../lib/similaritymetrics/ChapmanMatchingSoundex');
+var TokeniserWhitespace = require('../lib/tokenisers/TokeniserWhitespace');
 
 /**
  * Globals
@@ -61,6 +61,14 @@ describe('SimMetrics Matching', function () {
         it('will match Joseph and Jospeh with a high score', function() {
             var res = chapman.getSimilarity("Joseph", "Jospeh");
             res.should.be.approximately(0.8888, 0.1);
+        });
+        it('will match Barbara and Barbara with a high score', function() {
+            var res = chapman.getSimilarity("Barbara", "Barbara");
+            res.should.be.approximately(0.95, 0.1);
+        });
+        it('will match Aroldin and Aaron with a high score', function() {
+            var res = chapman.getSimilarity("Aroldin", "Aaron");
+            res.should.be.approximately(0.3, 0.1);
         });
     });
 });
