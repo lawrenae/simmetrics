@@ -5,7 +5,7 @@ This is a further fork from msamblet's version. I'm focused on a few additional 
 - Make this library produce the same values as the java version (important!) So far this means better results for
 	- ChapmanMatchingSoundex
 	- Levenshtein
-	- MongeElken
+	- MongeElkan
 	- SmithWatermanGotoh
 - Automated testing
 - Work with node.js
@@ -35,7 +35,7 @@ So far, nearly all parts of the library have been ported. Algorithms left to be 
 
 I should have those up very soon.
 
-###A note I should make: 
+###A note I should make:
 I did not include the original timing tests for each one. I think they are unnecessary. However, as they can be useful sometimes, I will include them sometime as seperate modules which can be merged into the algorithms.
 
 ##Soundex Notes

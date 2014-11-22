@@ -23,7 +23,7 @@ var BlockDistance = require('../lib/similaritymetrics/BlockDistance'),
     Levenshtein = require('../lib/similaritymetrics/Levenshtein'),
     LevenshteinLite = require('../lib/similaritymetrics/LevenshteinLite'),
     MatchingCoefficient = require('../lib/similaritymetrics/MatchingCoefficient'),
-    MongeElken = require('../lib/similaritymetrics/MongeElken'),
+    MongeElkan = require('../lib/similaritymetrics/MongeElkan'),
     NeedlemanWunsch = require('../lib/similaritymetrics/NeedlemanWunsch'),
     NeedlemanWunschLite = require('../lib/similaritymetrics/NeedlemanWunschLite'),
     OverlapCoefficient = require('../lib/similaritymetrics/OverlapCoefficient'),
@@ -36,19 +36,19 @@ var BlockDistance = require('../lib/similaritymetrics/BlockDistance'),
  * Unit tests
  */
 describe('MPI Metric comparison:', function () {
-    it('create output', function (done) {
+    it('create output (test-results.csv)', function (done) {
         var metrics = [BlockDistance,ChapmanLengthDeviation,
                         ChapmanMatchingSoundex,ChapmanMeanLength,
                         ChapmanOrderedNameCompoundSimilarity,CosineSimilarity,DamerauLevenshtein,
                         DiceSimilarity,EuclideanDistance,Hirschberg,JaccardSimilarity,
                         Jaro,JaroWinkler,Levenshtein,LevenshteinLite,MatchingCoefficient,
-                        MongeElken,NeedlemanWunsch,NeedlemanWunschLite,OverlapCoefficient,
+                        MongeElkan,NeedlemanWunsch,NeedlemanWunschLite,OverlapCoefficient,
                         QGramsDistance,SmithWatermanGotoh,SoundEx
                       ];
 
         var csvArray = [];
         csvArray.push(['#left', '#right', '#metric', '#score']);
-        
+
         metrics.forEach(function(metric) {
             var m = new metric();
             fs.readFile('./test/mpi-input.csv', 'utf8', function(err, input) {
