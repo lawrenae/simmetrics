@@ -24,8 +24,8 @@ var BlockDistance = require('../lib/similaritymetrics/BlockDistance'),
     LevenshteinLite = require('../lib/similaritymetrics/LevenshteinLite'),
     MatchingCoefficient = require('../lib/similaritymetrics/MatchingCoefficient'),
     MongeElkan = require('../lib/similaritymetrics/MongeElkan'),
-    NeedlemanWunsch = require('../lib/similaritymetrics/NeedlemanWunsch'),
-    NeedlemanWunschLite = require('../lib/similaritymetrics/NeedlemanWunschLite'),
+    NeedlemanWunch = require('../lib/similaritymetrics/NeedlemanWunch'),
+    NeedlemanWunchLite = require('../lib/similaritymetrics/NeedlemanWunchLite'),
     OverlapCoefficient = require('../lib/similaritymetrics/OverlapCoefficient'),
     QGramsDistance = require('../lib/similaritymetrics/QGramsDistance'),
     SmithWatermanGotoh = require('../lib/similaritymetrics/SmithWatermanGotoh'),
@@ -42,7 +42,7 @@ describe('MPI Metric comparison:', function () {
                         ChapmanOrderedNameCompoundSimilarity,CosineSimilarity,DamerauLevenshtein,
                         DiceSimilarity,EuclideanDistance,Hirschberg,JaccardSimilarity,
                         Jaro,JaroWinkler,Levenshtein,LevenshteinLite,MatchingCoefficient,
-                        MongeElkan,NeedlemanWunsch,NeedlemanWunschLite,OverlapCoefficient,
+                        MongeElkan,NeedlemanWunch,NeedlemanWunchLite,OverlapCoefficient,
                         QGramsDistance,SmithWatermanGotoh,SoundEx
                       ];
 
