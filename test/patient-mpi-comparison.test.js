@@ -48,14 +48,14 @@ describe('MPI Metric comparison:', function () {
 
 
         metrics.forEach(function(metric) {
-            var m = metric.call(this, null);
-            fs.readFile('mpi-input.csv', 'utf8', function(err, input) {
-                csvParser(input, {comment: '#'}, function(err, output) {
+            var m = new metric();
+            fs.readFile('./test/mpi-input.csv', 'utf8', function(err, input) {
+                csvParser.parse(input, {comment: '#'}, function(err, output) {
                     output.forEach(function(row) {
                         var score = m.getSimilarity(row[0], row[1]);
-                        console.log("Score for " + row[0] + " is " + score);
-                        done();
+                        console.log(metric.name + " score for " + row[0] + " vs " + row[1] + " is " + score);
                     });
+                    done();
                 });
             });
         });
