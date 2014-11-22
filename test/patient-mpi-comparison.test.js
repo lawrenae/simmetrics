@@ -43,7 +43,7 @@ describe('MPI Metric comparison:', function () {
                         DiceSimilarity,EuclideanDistance,Hirschberg,JaccardSimilarity,
                         Jaro,JaroWinkler,Levenshtein,LevenshteinLite,MatchingCoefficient,
                         MongeElken,NeedlemanWunsch,NeedlemanWunschLite,OverlapCoefficient,
-                        QGramsDistance,SmithWatermanGotoh,SoundEx,TokeniserWhitespace
+                        QGramsDistance,SmithWatermanGotoh,SoundEx
                       ];
 
 
