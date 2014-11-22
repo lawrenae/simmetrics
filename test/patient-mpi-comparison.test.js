@@ -46,12 +46,13 @@ describe('MPI Metric comparison:', function () {
                         QGramsDistance,SmithWatermanGotoh,SoundEx
                       ];
 
-
+        var csvArray = [];
+        csvArray.push(['#left', '#right', '#metric', '#score']);
+        
         metrics.forEach(function(metric) {
             var m = new metric();
             fs.readFile('./test/mpi-input.csv', 'utf8', function(err, input) {
                 csvParser.parse(input, {comment: '#'}, function(err, output) {
-                    var csvArray = [];
                     output.forEach(function(row) {
                         var score = m.getSimilarity(row[0], row[1]);
                         csvArray.push([row[0], row[1], metric.name, score]);
