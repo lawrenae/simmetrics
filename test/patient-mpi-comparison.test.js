@@ -51,13 +51,18 @@ describe('MPI Metric comparison:', function () {
             var m = new metric();
             fs.readFile('./test/mpi-input.csv', 'utf8', function(err, input) {
                 csvParser.parse(input, {comment: '#'}, function(err, output) {
+                    var csvArray = [];
                     output.forEach(function(row) {
                         var score = m.getSimilarity(row[0], row[1]);
-                        console.log(metric.name + " score for " + row[0] + " vs " + row[1] + " is " + score);
+                        csvArray.push([row[0], row[1], metric.name, score]);
                     });
-                    done();
+                    csvParser.stringify(csvArray, function(err, data) {
+                        // console.log(data);
+                        fs.writeFile('./test-results.csv', data, function(){});
+                    });
                 });
             });
         });
+        done();
     });
 });
