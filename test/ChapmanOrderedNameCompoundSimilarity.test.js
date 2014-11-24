@@ -17,10 +17,10 @@ describe('ChapmanOrderedNameCompoundSimilarity Matching', function () {
     });
 
     //straight out of the java version
-    // it('test strings should match', function() {
-    //     var result = metric.getSimilarity("Test String1", "Test String2");
-    //     result.should.be.approximately(0.9553572, 0.1);
-    // });
+    it('test strings should match', function() {
+        var result = metric.getSimilarity("Test String1", "Test String2");
+        result.should.be.approximately(0.9553572, 0.1);
+    });
 
     it('Neu strings should match', function() {
         var result = metric.getSimilarity("NNeu", "Neu");
