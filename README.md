@@ -28,7 +28,7 @@ mocha
    - MongeElkan
    - OverlapCoefficient
    - QGramsDistance
-2. You can use this as an npm package now (`npm install github.com/lawrenae/SimMetrics.js`), but I'd like to clean it up and submit it to npmjs.org
+2. You can use this as an npm package now (`npm install github.com/lawrenae/simmetrics`), but I'd like to clean it up and submit it to npmjs.org
 
 ##General Description
 Hand-optimized and re-factored to provide clean and fast string similarity algorithms for JavaScript developers.
