@@ -47,15 +47,16 @@ describe('MPI Metric comparison:', function () {
                       ];
 
         var csvArray = [];
-        csvArray.push(['#left', '#right', '#metric', '#score']);
+        csvArray.push(['#LastName','#FirstName','#CorrectLastName','#CorrectFirstName','#My best score','#metric', '#firstScore', '#lastScore']);
 
         metrics.forEach(function(metric) {
             var m = new metric();
             fs.readFile('./test/mpi-input.csv', 'utf8', function(err, input) {
                 csvParser.parse(input, {comment: '#'}, function(err, output) {
                     output.forEach(function(row) {
-                        var score = m.getSimilarity(row[0], row[1]);
-                        csvArray.push([row[0], row[1], metric.name, score]);
+                        var firstScore = m.getSimilarity(row[0], row[2]);
+                        var lastScore = m.getSimilarity(row[1], row[3]);
+                        csvArray.push([row[0], row[1], row[2], row[3], row[4], metric.name, firstScore, lastScore]);
                     });
                     csvParser.stringify(csvArray, function(err, data) {
                         // console.log(data);
