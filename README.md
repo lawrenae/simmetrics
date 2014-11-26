@@ -1,7 +1,7 @@
-JavaScript port of the SimMetrics Java library plus more.
+JavaScript port of the [SimMetrics Java library](http://sourceforge.net/projects/simmetrics/) plus more.
 ===
 
-This is a further fork from msamblet's version. I'm focused on a few additional things:
+This is a further fork from msamblet's version, which is a fork from novacrazy's version. I'm focused on a few additional things:
 - Make this library produce the same values as the java version (important!) So far this means better results for
 	- ChapmanMatchingSoundex
 	- Levenshtein
@@ -29,6 +29,14 @@ mocha
    - OverlapCoefficient
    - QGramsDistance
 2. You can use this as an npm package now (`npm install github.com/lawrenae/simmetrics`), but I'd like to clean it up and submit it to npmjs.org
+
+##Original Author:
+
+	"author": {
+		"name": "Aaron Trent",
+		"email": "novacrazy@gmail.com",
+		"url": "www.novacrazy.com"
+	}
 
 ##General Description
 Hand-optimized and re-factored to provide clean and fast string similarity algorithms for JavaScript developers.

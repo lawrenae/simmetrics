@@ -1,6 +1,6 @@
 {
   "name": "simmetrics",
-  "version": "0.8.5",
+  "version": "0.8.9",
   "description": "An optimized port of the SimMetrics Java library",
   "keywords": [
     "SimMetrics",
@@ -8,19 +8,13 @@
     "similarity"
   ],
   "bugs": {
-    "email": "enovacrazy@gmail.com"
+    "email": "andy.lawrence@gmail.com"
   },
   "license": "GPv2",
   "author": {
-    "name": "Aaron Trent",
-    "email": "novacrazy@gmail.com",
-    "url": "www.novacrazy.com"
+    "name": "Andy Lawrence",
+    "email": "andy.lawrence@gmail.com"
   },
-  "files": [
-    "./index.js",
-    "./lib"
-  ],
-  "main": "simmetrics",
   "repository": {
     "type": "git",
     "url": "http://www.github.com/lawrenae/simmetrics.git"
@@ -33,6 +27,6 @@
       "should": "^4.3.0"
   },
   "engines": {
-    "node": ">=0.10"
+    "node": ">=0.10.3"
   }
 }
