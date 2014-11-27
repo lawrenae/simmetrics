@@ -35,7 +35,6 @@ mocha
    - MongeElkan
    - OverlapCoefficient
    - QGramsDistance
-2. You can use this as an npm package now (`npm install github.com/lawrenae/simmetrics`), but I'd like to clean it up and submit it to npmjs.org
 
 ##Original Author:
 
