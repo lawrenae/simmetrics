@@ -1,6 +1,6 @@
 {
   "name": "simmetrics",
-  "version": "0.8.9",
+  "version": "0.8.10",
   "description": "An optimized port of the SimMetrics Java library",
   "keywords": [
     "SimMetrics",

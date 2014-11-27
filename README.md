@@ -1,17 +1,24 @@
 JavaScript port of the [SimMetrics Java library](http://sourceforge.net/projects/simmetrics/) plus more.
 ===
 
-This is a further fork from msamblet's version, which is a fork from novacrazy's version. I'm focused on a few additional things:
+This is a further fork from [msamblet's version](https://github.com/msamblanet/SimMetrics.js), which is a fork from [novacrazy's version](https://github.com/novacrazy/SimMetrics.js). I'm focused on a few additional things:
 - Make this library produce the same values as the java version (important!) So far this means better results for
 	- ChapmanMatchingSoundex
 	- Levenshtein
 	- MongeElkan
 	- SmithWatermanGotoh
+	- NeedlemanWunch
 - Automated testing
 - Work with node.js
 - Adding SmithWatermanGotoh metrics support.
 
+##Changelog
+- **0.8.10** -- combined with previous versions, the above focus points are in place (node.js support, testing, certain metrics) and is now published as an npm module (and I changed the name of the repo to match). This version just updates the readme.
+
 ##Use
+See the [test](https://github.com/lawrenae/simmetrics/tree/master/test) folder -- [simmetrics.test.js](https://github.com/lawrenae/simmetrics/blob/master/test/simmetrics.test.js) is a good place to start.
+
+##Developer getting started
 ```
 npm install
 npm install -g mocha
